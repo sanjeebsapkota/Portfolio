@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content1 %}
+
+<div class="row my-2">
+    {% for project in projects_show %}
+    <div class="col-md-4 col-sm-6 mb-4"> <!-- Adjusting the column size for better responsiveness -->
+        <div class="card"> <!-- Wrapping each project in a card for better structure -->
+            <div class="card-body">
+                <h5 class="card-title text-black text-center">{{ project.title }}</h5> <!-- Title at the top -->
+            </div>
+            <a href="{{ project.link }}"> <!-- Adding a link to each project -->
+                <img src="{% static project.path %}" class="card-img-top img-fluid" alt="{{ project.title }}" style="object-fit: cover; height: 300px;"> <!-- Adjusting image style for better fit -->
+            </a>
+            <div class="card-body">
+                <p class="card-text"> {{ project.description }} </p> <!-- Optionally include a description -->
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content1 %}

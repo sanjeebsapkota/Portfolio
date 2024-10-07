@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="row my-5">
+    <div class="col-4 d-flex justify-content-center align-items-center position-relative">
+        <img src="{% static 'images/im.png' %}" alt="image" class="about_image">
+        <div class="overlay"></div>
+    </div>
+
+ <div class="col-7 text-left text-light">
+     <h2> Hello !</h2>
+     <p class="fs-5">
+        I bring over 5 years of experience in IT and customer service, having worked in roles such as Junior Executive at Chandika Distillery, 
+        Senior IT Assistant at Deurali Janta Pharmaceuticals, and Junior Assistant at WorldLink Communications. My expertise spans SAP ERP implementation, 
+        network monitoring, and technical support, with a proven track record in enhancing operational efficiency and delivering high-quality service.
+      </p>
+      <p class="fs-5">
+        As a Junior Executive, I successfully implemented SAP Business One ERP, focusing on modules like Production, Accounting, and Inventory Management. 
+        I am skilled in data visualization using Microsoft Power BI, creating tailored reports, and managing system data backup and recovery. I also have 
+        hands-on experience in user account management and troubleshooting network issues, which further solidifies my comprehensive technical skill set. 
+      </p>
+      <p class="fs-6">
+        I am a self-taught software developer focused on Python and Django Rest Framework, having completed several projects in this area as I prepare
+        to enter the software engineering field.
+      </p>
+
+ </div>
+</div>
+
+
+<div class="row my-2">
+    <h2 class="text-center" style="color:#4fffb0"> My Tech Stack</h2>
+
+    <div class="d-flex justify-content-around align-items-center">
+      <img
+          src="{% static 'images/html.png' %}"
+          width="70"
+          height="70"
+          alt="HTML Logo"
+          class="img-fluid bounce-animation"
+      />
+
+      <img
+          src="{% static 'images/css.png' %}"
+          width="70"
+          height="70"
+          alt="CSS Logo"
+          class="img-fluid bounce-animation"
+      />
+
+      <img
+          src="{% static 'images/django.png' %}"
+          width="70"
+          height="70"
+          alt="django Logo"
+          class="img-fluid bounce-animation"
+      />
+
+      <img
+          src="{% static 'images/python.jpg' %}"
+          width="60"
+          height="60"
+          alt="Python Logo"
+          class="img-fluid bounce-animation"
+      />
+
+      <img
+          src="{% static 'images/drf.png' %}"
+          width="60"
+          height="60"
+          alt="drf Logo"
+          class="img-fluid bounce-animation"
+      />
+    </div>
+</div>
+
+{% endblock content1 %}

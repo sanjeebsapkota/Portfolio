@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="row my-2">
+    {% for eachitem in experience %}
+        <div class="jumbotron jumbotron-fluid mt-2 experience-item">
+            <h4 class="display4 company-name">{{ eachitem.company }} ({{ eachitem.location }})</h4>
+            <p class="lead position-title"><strong>{{ eachitem.position }}</strong></p>
+            <p class="text-muted date-range"><em>{{ eachitem.start_date }} - {{ eachitem.end_date }}</em></p>
+            <ul class="experience-description">
+                {% for desc in eachitem.description %}
+                    <li style="color:#ffffff;">{{ desc }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content1 %}
