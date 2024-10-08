@@ -47,7 +47,7 @@ def projects(request):
         {
             'title': 'Inventory Management System',
             'path': 'images/ims.PNG',
-            'link': 'https://example.com/ims',  # Replace with actual link
+            'link': 'https://github.com/sanjeebsapkota/Inventory-Management-System',  # Replace with actual link
             'description': 'A system for tracking inventory levels and orders.',
         },
         {
